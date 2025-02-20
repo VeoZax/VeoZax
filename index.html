@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeoZax - Official Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+            font-size: 2rem; /* Responsive font size */
+            color: aqua;
+            text-shadow: 3px 3px 5px black;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Responsive Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .btn-youtube { background: #FF0000; }
+        .btn-instagram { background: #E1306C; }
+        .btn-facebook { background: #1877F2; }
+        .btn-discord { background: #5865F2; }
+
+        /* Rainbow Outline Effect */
+        .rainbow-outline-text {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            padding: 10px;
+        }
+
+        .rainbow-outline-text::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            border-radius: 5px;
+            z-index: -1;
+            animation: rainbow-outline 5s linear infinite;
+        }
+
+        @keyframes rainbow-outline {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Image Box with Updated Styles */
+        .owner-image-box {
+            width: 100%;
+            max-width: 680px;
+            height: auto;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: #333; /* Slightly lighter background */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+            border-radius: 10px; /* Rounded corners */
+        }
+        .owner-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem; /* Smaller font for mobile */
+            }
+            .btn {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+            }
+            .owner-image-box {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>VeoZax Official Website</header>
+    <div class="container">
+        <!-- Buttons -->
+        <a href="https://www.youtube.com/channel/UC33-nbRHQn-3H56aQc0sanA" class="btn btn-youtube" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/veozax/?hl=en" class="btn btn-instagram" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61560853464257" class="btn btn-facebook" target="_blank">Facebook</a>
+        <a href="https://discord.gg/9AktGKJe94" class="btn btn-discord" target="_blank">Discord</a>
+
+        <!-- Text with Rainbow Outline Effect -->
+        <div class="rainbow-outline-text">
+            Hi, I'm VeoZax! A Minecraft content creator making cool animations, gaming, and educational videos. Explore my world!
+        </div>
+
+        <!-- Owner Image Box -->
+        <div class="owner-image-box">
+            <img src="https://media-hosting.imagekit.io//7a589b060123471c/-Render-16.5.png?Expires=1834295280&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=H-REOFj~uLgMzvGK2DmvYqoXHzTo~2A5OmNiZZygYDkFQzTFkFGnGyqpBsgHixfpFrn1WJQvaZT2mY82C4bv3LajfW0~xzLpqVpwoGDxanrEkB7pVsrI64o8m6mcuWXp40~0P~tKHPuYqDR3ZSM-ryRqXmZtWI-NTIKvg2PD0qUyLQw35xxcQ3dGZW34nrQec~qKNkhQncNrW-4OBnsJMG9vHiCxt59TcgXIlGxr12EZbm5nOyCqtu2JG209ByJcJCdfn6fBeCvrrEhQ6Suksaeu-aSwfWOTDG9nEfzEQMJUX83lqAdgJTy~UrG1mQyZNaLU0uvGjFeEDBKBc8yLRA__" alt="Owner's Image">
+        </div>
+    </div>
+</body>
+</html>
